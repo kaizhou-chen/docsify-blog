@@ -1,0 +1,8 @@
+# Logs
+logs
+*.log
+
+.DS_Store
+
+*.bat
+/_bak/sidebar-helper
