@@ -8,6 +8,8 @@
   
   - [Angular 笔记](docs/get-start/Angular入门 "Angular 笔记")
 
+  - [部署到 GitHub](docs/get-start/部署到github "部署到 GitHub")
+
 - **开发工具**
   - [开发工具](docs/get-start/开发工具 "开发工具")
   - [Docsify](docs/get-start/Docsify "Docsify")
