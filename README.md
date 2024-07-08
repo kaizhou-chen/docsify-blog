@@ -31,29 +31,29 @@
 
 ```
 - docs
-  - get-start		(首页)
-    - _sidebar.md	(首页的侧边栏)
+  - get-start      (首页)
+    - _sidebar.md  (首页的侧边栏)
     
   - JavaScript
-    - _sidebar.md	(JavaScript目录，及其所有的子目录，都使用这个侧边栏)
+    - _sidebar.md  (JavaScript目录，及其所有的子目录，都使用这个侧边栏)
   
   - Vue3
-    - _sidebar.md	(Vue3目录，及其所有的子目录，都使用这个侧边栏)
+    - _sidebar.md  (Vue3目录，及其所有的子目录，都使用这个侧边栏)
 ```
 
 
 
 解决方式
 
-```
+```js
 window.$docsify = {
-	...
-	
-	// 不同的目录，使用不同的侧边栏
-	alias: {
-		'/docs/JavaScript(.*)/_sidebar.md': '/docs/JavaScript/_sidebar.md',
-		'/docs/Vue3(.*)/_sidebar.md': '/docs/Vue3/_sidebar.md'
-	}
+  ...
+  
+  // 不同的目录，使用不同的侧边栏
+  alias: {
+    '/docs/JavaScript(.*)/_sidebar.md': '/docs/JavaScript/_sidebar.md',
+    '/docs/Vue3(.*)/_sidebar.md': '/docs/Vue3/_sidebar.md'
+  }
 }
 ```
 
@@ -79,20 +79,20 @@ window.$docsify = {
 
 ```js
 window.$docsify = {
-	...
-	
-	// 解决图片加载的问题
-	markdown: {
-		renderer: {
-			image: function(href, title) {
-				const mediaPath = 'assets';
-				
-				const regex = new RegExp('^(.*)' + mediaPath);
-				const path = href.replace(regex, mediaPath);
-				return `<img src="${path}" data-origin="${path}" alt="${title}">`
-			}
-		}
-	}
+  ...
+  
+  // 解决图片加载的问题
+  markdown: {
+    renderer: {
+      image: function(href, title) {
+        const mediaPath = 'assets';
+        
+        const regex = new RegExp('^(.*)' + mediaPath);
+        const path = href.replace(regex, mediaPath);
+        return `<img src="${path}" data-origin="${path}" alt="${title}">`
+      }
+    }
+  }
 }
 ```
 
