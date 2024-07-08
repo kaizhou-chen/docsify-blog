@@ -16,7 +16,7 @@
 
 ### deploy.yml
 
-在项目的根目录，新建文件夹 `.github` 及子文件夹 `/ workflows`
+在项目的根目录，新建文件夹 `.github` 及子文件夹 `workflows`
 
 新建配置文件 `deploy.yml`
 
@@ -118,7 +118,7 @@ dist 目录可能会在 .gitignore 文件里，在提交时被忽略掉
 
 选择 Deploy from a branch，然后选择  `gh-pages` 分支
 
-![github-pages](../../assets/images/其他/GitHub/github-pages.png)
+![github-pages](../../assets/images/其他/GitHub/github-gh-pages.png)
 
 ## 问题一
 
