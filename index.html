@@ -16,19 +16,22 @@
   <script>
 		window.$docsify = {
       name: "Kaizhou Chen's Blog", // 标题
-			repo: 'https://github.com/kaizhou-chen/vue3-example',
+			// repo: 'https://github.com/kaizhou-chen/vue3-example',
+
 			auto2top: true,			// 跳转后自动到顶部
 			onlyCover: true,		// 首页只显示封面
 			coverpage: true,		// 封面		_coverpage.md
 			loadSidebar: true,	// 侧边栏	_sidebar.md
 			loadNavbar: true,		// 导航栏	_navbar.md
-
 			alias: {
 				// 导航栏，显示在右上角
 				'/.*/_navbar.md': '/_navbar.md',
 
 				// 不同目录，使用不同的侧边栏 【用自定义的函数生成】
-				...getSidebar(['get-start', 'Vue2', 'Vue3', 'Vite', 'React', 'JavaScript'])
+				...getSidebar(
+					['_get-start', '_more'], // 使用默认侧边栏
+					['Vue2', 'Vue3', 'React', 'Vite', 'JavaScript基础'], // 使用自己的侧边栏
+				)
 			},
 			
 			// ------ 插件 ------
@@ -90,15 +93,24 @@
 		// 生成侧边栏的配置
 		// 比如 Vue3 目录及其所有的子目录，使用同一个 _sidebar.md
 		// '/docs/Vue3(.*)/_sidebar.md': '/docs/Vue3/_sidebar.md'
-		function getSidebar(dir) {
-			const sidebar = dir.reduce((obj, item) => {
+		function getSidebar(commonSidebar, customSidebar) {
+			// 使用默认侧边栏
+			const common = commonSidebar.reduce((obj, item) => {
+				const key = `/docs/${item}(.*)/_sidebar.md`
+				const value = `/_sidebar.md`
+				obj[key] = value;
+				return obj
+			}, {})
+
+			// 使用自己的侧边栏
+			const custom = customSidebar.reduce((obj, item) => {
 				const key = `/docs/${item}(.*)/_sidebar.md`
 				const value = `/docs/${item}/_sidebar.md`
 				obj[key] = value;
 				return obj
 			}, {})
 
-			return sidebar;
+			return {...common, ...custom};
 		}
   </script>
 	
@@ -135,6 +147,17 @@
   
   <!-- 调整样式 -->
   <style type="text/css">
+		/*
+		 * 覆盖默认样式
+		 */
+		 pre code {
+			font-size: 1rem !important;
+		}
+
+		table tr td {
+			min-width: 180px;
+		}
+
 		/* 
 		 * 对于需要宽度为 100% 的表格
 		 * 用div将其包住，调整样式，并自动填充最后一列 
@@ -154,13 +177,6 @@
 		}
 		.full-width-table table tr td:nth-child(2) {
 			min-width: 145px;
-		}
-
-		/*
-		 * 覆盖默认样式
-		 */
-		pre code {
-			font-size: 1rem !important;
 		}
   </style>
 </body>
