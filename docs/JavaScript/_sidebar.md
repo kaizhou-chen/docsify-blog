@@ -1,6 +1,8 @@
 - [返回](docs/get-start/ "返回")
 
 - JavaScript 基础
+  - 函数式编程
+    - [函数防抖](docs/JavaScript/1.JavaScript_基础/01.函数式编程/01.函数防抖 "函数防抖")
   - [原型链](docs/JavaScript/1.JavaScript_基础/原型链 "原型链")
   - [宏任务](docs/JavaScript/1.JavaScript_基础/宏任务 "宏任务")
   - [资源提示符](docs/JavaScript/1.JavaScript_基础/资源提示符 "资源提示符")

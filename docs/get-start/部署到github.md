@@ -1,20 +1,18 @@
 ## 部署到 GitHub
 
-使用 GitHub Actions 和 GitHub Pages 实现 Vue 项目的自动构建与发布
+使用 GitHub Actions 和 GitHub Pages 实现前端项目的自动构建与发布
 
-### GitHub Actions
+GitHub Actions，自动打包部署
 
-自动打包部署，[GitHub Actions 文档 - GitHub 文档](https://docs.github.com/zh/actions)
-
-### GitHub Pages
-
-静态资源托管，[GitHub Pages 使用入门 - GitHub 文档](https://docs.github.com/zh/pages/getting-started-with-github-pages)
+GitHub Pages，静态资源托管
 
 
 
-## 创建打包部署脚本
+## GitHub Actions
 
-### deploy.yml
+### 创建打包部署脚本
+
+#### deploy.yml
 
 在项目的根目录，新建文件夹 `.github` 及子文件夹 `workflows`
 
@@ -22,13 +20,15 @@
 
 ![github_workflows](../../assets/images/其他/GitHub/github_workflows.png)
 
+**deploy.yml**
+
 ```yaml
 name: Build and Deploy
 
 on:
   push:
     branches:
-      - main # 这段是在推送到 main 分支时触发该命令
+      - main # 推送到 main 分支时触发该命令
 
 permissions:
   contents: write # 直接授权，不配置 GITHUB_TOKEN
@@ -41,7 +41,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: main # 这一步拉取 main 分支代码
+          ref: main # 拉取 main 分支代码
 
       - name: Setup Node.js and npm
         uses: actions/setup-node@v3
@@ -52,7 +52,7 @@ jobs:
         run: npm install # 使用 npm 安装依赖
 
       - name: Build
-        run: npm run build:github # 这里是执行打包命令
+        run: npm run build:github # 执行打包命令
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -62,15 +62,16 @@ jobs:
 
 
 
-注意：
+### 关于 .gitignore
 
-dist 目录可能会在 .gitignore 文件里，在提交时被忽略掉
+> [!ATTENTION]
+> dist 目录可能会在 .gitignore 文件里，在提交时被忽略掉
+>
+> 但是部署时，需要把 dist 目录提交到 `gh-pages` 分支，不能被忽略掉
+>
+> 所以需要再写一个打包命令，在打包时，覆盖掉 .gitignore 文件
 
-但是部署时，需要把 dist 目录提交到 `gh-pages` 分支，不能被忽略掉
-
-所以需要再写一个打包命令，在打包时，覆盖掉 .gitignore 文件
-
-### package.json
+#### package.json
 
 ```js
 {
@@ -83,7 +84,7 @@ dist 目录可能会在 .gitignore 文件里，在提交时被忽略掉
 }
 ```
 
-### vite.config.ts
+#### vite.config.ts
 
 ```js
 {
@@ -114,17 +115,21 @@ dist 目录可能会在 .gitignore 文件里，在提交时被忽略掉
 
 
 
-## 配置 GitHub Pages
+## GitHub Pages
 
-选择 Deploy from a branch，然后选择  `gh-pages` 分支
+选择  `gh-pages` 分支
 
 ![github-pages](../../assets/images/其他/GitHub/github-gh-pages.png)
 
-## 问题一
+
+
+## 部署后的问题
+
+### 问题一
 
 部署到 github 后，下划线开头的一个文件`_plugin-vue_export-helper`访问不到
 
-### 解决办法
+#### 解决办法
 
 **vite.config.js**
 
