@@ -5,4 +5,7 @@ logs
 .DS_Store
 
 *.bat
-/_bak/sidebar-helper
+
+/node_modules
+/src/dist
+package-lock.json
