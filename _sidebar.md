@@ -4,8 +4,6 @@
 - **JavaScript 笔记**
   - [JavaScript 基础](docs/JavaScript基础/ "JavaScript 基础")
 
-- **CSS 笔记**
-
 - **框架学习**
   - [Vue 3 笔记](docs/Vue3/2.Vue_3_基础/01.模板语法 "Vue 3 笔记")
   - [React 笔记](docs/React/2.React_基础/01.React_Hooks "React 笔记")

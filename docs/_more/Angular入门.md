@@ -40,7 +40,7 @@ ng build
 
 
 
-## 配置别名 @
+### 配置别名 @
 
 **tsconfig.json**
 
@@ -58,7 +58,7 @@ ng build
 
 
 
-## 配置代理
+### 配置代理
 
 在项目根目录下建立文件：proxy.conf.json
 
@@ -163,7 +163,7 @@ module.exports = PROXY_CONFIG;
 
 
 
-## 配置路由
+### 配置路由
 
 创建组件
 
@@ -189,7 +189,7 @@ const routes: Routes = [
 
 
 
-## 应用入口
+### 应用入口
 
 angular.json
 
@@ -252,9 +252,9 @@ index.html
 
 
 
-# Angular 基础
+## Angular 基础
 
-## 模板语法
+### 模板语法
 
 | 模板语法 | Angular                         | Vue                |
 | -------- | ------------------------------- | ------------------ |
@@ -270,7 +270,7 @@ index.html
 
 
 
-## Angular / Vue 3 对照表
+### Angular / Vue 3 对照表
 
 |                                                      | Angular                                                      | Vue 3 组合式API                                              |
 | ---------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -283,11 +283,13 @@ index.html
 | 插槽 slot                                            |                                                              |                                                              |
 | 双向绑定                                             |                                                              |                                                              |
 
-### 动态组件
+
+
+动态组件
 
 
 
-## NgModule
+### NgModule
 
  Angular v18 [参考文档](https://www.cnblogs.com/keatkeat/p/18010076)
 
@@ -320,9 +322,9 @@ index.html
 
 
 
-## 组件通信
+### 组件通信
 
-### 父子组件通信
+#### 父子组件通信
 
 **父组件 向 子组件 传递数据 (Vue props)**
 
@@ -389,7 +391,7 @@ public print(content:string):void{
 
 
 
-### Subject 发布订阅
+#### Subject 发布订阅
 
 **Subject 发布订阅 (Vue eventBus)**
 
@@ -419,7 +421,7 @@ this.messageService.getMessageSource().subscribe(m => {
 
 
 
-### Service 状态管理
+#### Service 状态管理
 
 **Service (pinia)**
 
@@ -457,7 +459,7 @@ export class MyComponent {
 
 
 
-## 生命周期
+### 生命周期
 
 | 生命周期                  | Angular                                                      | Vue 3           |
 | ------------------------- | ------------------------------------------------------------ | --------------- |
@@ -468,9 +470,9 @@ export class MyComponent {
 
 
 
-# 常见问题
+## 常见问题
 
-## ng 无法加载文件
+### ng 无法加载文件
 
 - 管理员身份打开 PowerShell
 

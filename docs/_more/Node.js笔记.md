@@ -114,7 +114,7 @@ build({
 
 
 
-## package.json
+### package.json
 
 ```js
 {
@@ -136,7 +136,7 @@ build({
 
 ## SQLite
 
-### 安装 SQLite
+**安装 SQLite**
 
 ```
 npm install sqlite3
@@ -151,7 +151,7 @@ npm install sqlite3
   REAL：浮点数字
   INTEGER：整数
 
-### 新建表
+**新建表**
 
 ```sqlite
 CREATE TABLE IF NOT EXISTS marketing (
@@ -167,9 +167,7 @@ CREATE TABLE IF NOT EXISTS marketing (
 )
 ```
 
-### 其他
-
-查看执行计划
+**查看执行计划**
 
 ```sqlite
 EXPLAIN QUERY PLAN
