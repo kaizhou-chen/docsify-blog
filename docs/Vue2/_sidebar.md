@@ -1,4 +1,4 @@
-- [返回](docs/get-start/ "返回")
+- [返回](docs/_get_start/ "返回")
 
 - vue-cli 搭建项目
   - [vue-cli 创建项目](docs/Vue2/1.vue-cli_搭建项目/01.vue-cli_创建项目 "vue-cli 创建项目")

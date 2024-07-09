@@ -2,4 +2,4 @@
 
 记录前端学习的点点滴滴。
 
-[开始阅读](docs/get-start/)
+[开始阅读](docs/_get_start/)
