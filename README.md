@@ -96,3 +96,11 @@ window.$docsify = {
 }
 ```
 
+
+
+## 自动生成侧边栏
+
+```bash
+npm run test
+```
+

@@ -3,7 +3,7 @@
 ## 创建项目
 
 
-#### 生成 package.json
+### 生成 package.json
 
 ```bash
 npm init -y
@@ -11,7 +11,7 @@ npm init -y
 
 
 
-#### 安装 TypeScript
+### 安装 TypeScript
 
 ```bash
 npm install typescript @types/express @types/node  --save-dev
@@ -19,7 +19,7 @@ npm install typescript @types/express @types/node  --save-dev
 
 
 
-#### 生成 tsconfig.json
+### 生成 tsconfig.json
 
 ```
 npx tsc --init
@@ -27,7 +27,7 @@ npx tsc --init
 
 
 
-#### 修改配置
+### 修改配置
 
 **tsconfig.json**
 
@@ -136,7 +136,7 @@ build({
 
 ## SQLite
 
-#### 安装 SQLite
+### 安装 SQLite
 
 ```
 npm install sqlite3
@@ -151,7 +151,7 @@ npm install sqlite3
   REAL：浮点数字
   INTEGER：整数
 
-#### 新建表
+### 新建表
 
 ```sqlite
 CREATE TABLE IF NOT EXISTS marketing (
@@ -167,7 +167,7 @@ CREATE TABLE IF NOT EXISTS marketing (
 )
 ```
 
-#### 其他
+### 其他
 
 查看执行计划
 
