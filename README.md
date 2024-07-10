@@ -98,9 +98,42 @@ window.$docsify = {
 
 
 
-## 自动生成侧边栏
+## 生成侧边栏
 
 ```bash
 npm run test
+```
+
+
+
+### 批处理文件
+
+为了方便在本地操作，可以创建批处理文件，来启动服务
+
+**startup.bat**
+
+```bash
+docsify serve
+```
+
+
+
+**sidebar.bat**
+
+```bash
+node src/dist/dist.js --test
+
+:: 不退出窗口，使用 pause
+pause
+```
+
+
+
+打包脚本文件
+
+```bash
+npm install
+
+npm run build
 ```
 
