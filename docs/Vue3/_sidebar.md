@@ -19,7 +19,6 @@
 
 - 其他
   - [Pinia](docs/Vue3/4.其他/01.Pinia "Pinia")
-  - [CSS](docs/Vue3/4.其他/02.CSS "CSS")
-  - [ElementPlus](docs/Vue3/4.其他/03.ElementPlus "ElementPlus")
-  - [打包部署](docs/Vue3/4.其他/04.打包部署 "打包部署")
-  - [guide](docs/Vue3/4.其他/05.guide "guide")
+  - [ElementPlus](docs/Vue3/4.其他/02.ElementPlus "ElementPlus")
+  - [打包部署](docs/Vue3/4.其他/03.打包部署 "打包部署")
+  - [样式隔离与样式穿透](docs/Vue3/4.其他/04.样式隔离与样式穿透 "样式隔离与样式穿透")
