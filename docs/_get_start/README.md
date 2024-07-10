@@ -11,8 +11,8 @@
 
 | 布局          | 动画                | 其他             |
 | ------------- | ------------------- | ---------------- |
-| 弹性布局 flex | 过渡动画 transition | 变形 transform | 
-| 网格布局 grid | 关键帧 @keyframes   | 权重 specificity   |
+| 弹性布局 flex | 过渡动画 transition | 权重 specificity |
+| 网格布局 grid | 关键帧 @keyframes   | 变形 transform   |
 
 
 
@@ -23,3 +23,4 @@
 | Vue 3       | React Hooks  | Element Plus |
 | Vue Router  | React Router | Ant Design   |
 | Pinia、Vuex | React Redux  | ECharts      |
+
