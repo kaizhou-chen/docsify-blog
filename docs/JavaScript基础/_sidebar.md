@@ -7,13 +7,12 @@
   - [Promise A+ 规范](docs/JavaScript基础/01.内置对象/04.Promise_A+_规范 "Promise A+ 规范")
 
 - 核心模块
-  - [任务队列](docs/JavaScript基础/02.核心模块/02.任务队列 "任务队列")
-  - [事件循环](docs/JavaScript基础/02.核心模块/03.事件循环 "事件循环")
-  - [宏任务](docs/JavaScript基础/02.核心模块/宏任务 "宏任务")
+  - [事件循环](docs/JavaScript基础/02.核心模块/01.事件循环 "事件循环")
+  - [模块化](docs/JavaScript基础/02.核心模块/02.模块化 "模块化")
+  - [闭包](docs/JavaScript基础/02.核心模块/03.闭包 "闭包")
 
 - 函数式编程
   - [箭头函数](docs/JavaScript基础/03.函数式编程/01.箭头函数 "箭头函数")
-  - [闭包](docs/JavaScript基础/03.函数式编程/02.闭包 "闭包")
   - [防抖](docs/JavaScript基础/03.函数式编程/03.防抖 "防抖")
   - [防抖节流](docs/JavaScript基础/03.函数式编程/防抖节流 "防抖节流")
 
