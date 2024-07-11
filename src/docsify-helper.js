@@ -11,8 +11,8 @@ let baseDir = 'D:\\workspace\\docsify-blog';
 function getItemList(item) {
   const list = [];
   if (item.name === 'Vite') {
-    list.push('- [Vue 3 笔记](docs/Vue3/1.搭建项目/01.搭建项目 "Vue 3 笔记")\n');
-    list.push('- [React 笔记](docs/React/1.搭建项目/0.搭建项目 "React 笔记")\n');
+    list.push('- [Vue 3 基础](docs/Vue3基础/1.搭建项目/01.搭建项目 "Vue 3 基础")\n');
+    list.push('- [React 基础](docs/React/1.搭建项目/01.搭建项目 "React 基础")\n');
   } else {
     list.push('- [返回](docs/_get_start/ "返回")\n');
   }

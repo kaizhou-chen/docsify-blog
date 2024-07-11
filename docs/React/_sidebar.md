@@ -1,7 +1,7 @@
 - [返回](docs/_get_start/ "返回")
 
 - 搭建项目
-  - [搭建项目](docs/React/1.搭建项目/0.搭建项目 "搭建项目")
+  - [搭建项目](docs/React/1.搭建项目/01.搭建项目 "搭建项目")
 
 - React 基础
   - [React Hooks](docs/React/2.React_基础/01.React_Hooks "React Hooks")
