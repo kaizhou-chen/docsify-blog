@@ -64,9 +64,9 @@ npm run tauri info
 
 ```js
 {
-	"bundle": {
-		"identifier": "com.tauri.dev",
-	}
+  "bundle": {
+    "identifier": "com.tauri.dev",
+  }
 }
 ```
 

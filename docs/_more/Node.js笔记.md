@@ -122,9 +122,9 @@ build({
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon src/index.ts",		// 监听文件，当文件发生变化，重新执行脚本
-    "test": "npx ts-node src/test.ts",	// 执行 ts 脚本
-    "build": "node esbuild.js",			// 打包 ts 代码
+    "dev": "nodemon src/index.ts",    // 监听文件，当文件发生变化，重新执行脚本
+    "test": "npx ts-node src/test.ts",  // 执行 ts 脚本
+    "build": "node esbuild.js",      // 打包 ts 代码
         
     // 打包 js 代码
     "build-js": "esbuild src/index.js --bundle --minify --outfile=dist/dist.js --platform=node"

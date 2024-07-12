@@ -89,21 +89,21 @@ jobs:
 ```js
 {
   plugins: [
-		vue(),
+    vue(),
 
-		// 自定义插件
-		{
-			name: 'copy-gitignore',
-			writeBundle() {
-				// 如果是部署到 github，则覆盖 .gitignore
-				if (process.argv.includes('--deploy')) {
-					const src = path.resolve(__dirname, '.bak/.gitignore');
-					const dest = path.resolve(__dirname, '.gitignore');
-					fs.copyFile(src, dest, () => {})
-				}
-			}
-		}
-	],
+    // 自定义插件
+    {
+      name: 'copy-gitignore',
+      writeBundle() {
+        // 如果是部署到 github，则覆盖 .gitignore
+        if (process.argv.includes('--deploy')) {
+          const src = path.resolve(__dirname, '.bak/.gitignore');
+          const dest = path.resolve(__dirname, '.gitignore');
+          fs.copyFile(src, dest, () => {})
+        }
+      }
+    }
+  ],
 }
 ```
 

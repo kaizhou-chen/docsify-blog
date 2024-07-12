@@ -172,6 +172,10 @@ function getContent(file, text) {
   regex = new RegExp('<img(.*?)>', 'g')
   content = content.replace(regex, replacer)
 
+  // 制表符 tab 替换为 2 个空格
+  regex = new RegExp('\t', 'g')
+  content = content.replace(regex, '  ')
+
   return content;
 }
 
