@@ -86,11 +86,11 @@ function getChildren(folder, options) {
 }
 
 /**
- * 根据文件的路径，计算出其与 baseDir 之间的相对路径
+ * 根据文件的路径，计算出其与 baseDir 之间相隔的路径
  * @param file 文件路径
  * @returns 相对路径，如 ../
  */
-function getRelativePath(file, baseDir) {
+function diffPath(file, baseDir) {
   const folder = path.join(file, '../')
   const diff = path.relative(baseDir, folder)
   const len = diff.split(separator).length;
@@ -103,7 +103,7 @@ module.exports = {
 
   readFile,
   writeFile,
-  getChildren,
-  getRelativePath,
   getMarkdownList,
+  getChildren,
+  diffPath,
 }
