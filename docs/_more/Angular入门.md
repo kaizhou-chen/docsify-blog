@@ -23,13 +23,13 @@ ng g component 路径/组件名称 -m 模块名称 --standalone false
 # 也可能需要在 exports 里导出组件
 
 # 创建其他
-Directive		ng g directive my-new-directive
-Service			ng g service my-new-service
-Pipe			ng g pipe my-new-pipe
+Directive    ng g directive my-new-directive
+Service      ng g service my-new-service
+Pipe      ng g pipe my-new-pipe
 
-Interface		ng g interface my-new-interface
-Class			ng g class my-new-class
-Enum			ng g enum my-new-enum
+Interface    ng g interface my-new-interface
+Class      ng g class my-new-class
+Enum      ng g enum my-new-enum
 
 # 启动运行 
 ng serve
@@ -48,11 +48,11 @@ ng build
 "compilerOptions": {
     ...
     
-	// 配置别名 @
-	"baseUrl": "./",
-	"paths": { 
-		"@/*": ["src/*"] 
-	}
+  // 配置别名 @
+  "baseUrl": "./",
+  "paths": { 
+    "@/*": ["src/*"] 
+  }
 },
 ```
 
@@ -198,7 +198,7 @@ angular.json
   "build": {
     "options": {
        "index": "src/index.html",
-       "main": "src/main.ts",	// 应用入口
+       "main": "src/main.ts",  // 应用入口
     }
   }
 }

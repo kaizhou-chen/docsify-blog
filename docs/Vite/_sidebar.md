@@ -1,6 +1,6 @@
-- [Vue 3 笔记](docs/Vue3/1.搭建项目/01.搭建项目 "Vue 3 笔记")
+- [Vue 3 基础](docs/Vue3基础/1.搭建项目/01.搭建项目 "Vue 3 基础")
 
-- [React 笔记](docs/React/1.搭建项目/0.搭建项目 "React 笔记")
+- [React 基础](docs/React/1.搭建项目/01.搭建项目 "React 基础")
 
 - Vite 搭建项目
   - [node.js 配置](docs/Vite/Vite_搭建项目/01.node.js_配置 "node.js 配置")

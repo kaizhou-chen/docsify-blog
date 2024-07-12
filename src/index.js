@@ -1,4 +1,6 @@
-const { setBaseDir,  updateSidebar,  updateImagePath } = require('./docsify-helper')
+const { setBaseDir } = require('./docsify-utils/app')
+const { updateSidebar } = require('./docsify-utils/update-sidebar')
+const { updateImagePath } = require('./docsify-utils/update-image')
 
 function main() {
   setBaseDir();
