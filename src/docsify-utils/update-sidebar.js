@@ -2,8 +2,6 @@ const path = require('path')
 const { getBaseDir, getDocsDir, getRelativePath } = require('./app')
 const { separator, readFile, writeFile, getChildren } = require("./file-utils");
 
-const base = getBaseDir() + separator;
-
 /** 侧边栏的文件名 */
 const sidebarName = '_sidebar.md';
 
@@ -35,7 +33,8 @@ function getLabel(name) {
  * 将文件路径，转换为菜单上的链接地址
  */
 function getHref(path) {
-  return path.replace(base, '')       // 只保留相对路径
+  const base = getBaseDir() + separator;
+  return path.replace(base , '')      // 只保留相对路径
              .replace(/\\/g, '/')     // 将分隔符统一成 /
              .replace(/([.]md)/, '')  // 将结尾的 .md 后缀删除
 }
