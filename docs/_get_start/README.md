@@ -9,18 +9,20 @@
 
 ## CSS
 
-| 布局          | 动画                | 其他             |
-| ------------- | ------------------- | ---------------- |
-| 弹性布局 flex | 过渡动画 transition | 权重 specificity |
-| 网格布局 grid | 关键帧 @keyframes   | 变形 transform   |
+| 布局          | 动画                | 背景                 | 其他             |
+| ------------- | ------------------- | -------------------- | ---------------- |
+| 弹性布局 flex | 过渡动画 transition | 渐变 linear-gradient | 权重 specificity |
+| 网格布局 grid | 关键帧 @keyframes   | 裁剪 clip-path       | 变形 transform   |
+
 
 
 
 ## 框架
 
-| Vue         | React        | UI 框架      |
-| ----------- | ------------ | ------------ |
-| Vue 3       | React Hooks  | Element Plus |
-| Vue Router  | React Router | Ant Design   |
-| Pinia、Vuex | React Redux  | ECharts      |
+| Vue | React    | Web 前端   | 移动端       |
+| ----------- | ------------ | ------------ | ------------ |
+| Vue 2、Vue 3 | React Hooks | Element Plus | 小程序：uniapp |
+| Vue Router、Pinia、Vuex | React Router、React Redux | Ant Design | 原生App：React Native |
+
+
 

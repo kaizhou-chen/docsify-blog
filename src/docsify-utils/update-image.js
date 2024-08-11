@@ -23,7 +23,7 @@ function updateImagePath() {
   }
 
   console.log('\n')
-  console.log(changeList.length === 0 ? '图片路径没有变化' : '更新了如下文件里的图片路径')
+  console.log(changeList.length === 0 ? '文件没有变化' : '更新了如下文件里的图片路径、制表符等')
   console.log(changeList)
 }
 
