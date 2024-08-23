@@ -152,6 +152,8 @@ const onTabImage = (url: string) => {
 
 #### 新建分包页面
 
+manifest.json
+
 ```js
 // 分包加载规则
 "subPackages": [
